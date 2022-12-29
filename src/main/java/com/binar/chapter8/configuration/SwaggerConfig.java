@@ -22,11 +22,8 @@ public class SwaggerConfig {
                            @Value("v1.0.0") String appVersion) {
         Server server1 = new Server();
         server1.setUrl("https://servicefilmschallenge8-production.up.railway.app/");
-        Server server2 = new Server();
-        server2.setUrl("http://localhost:8080/");
         List<Server> listOfServer = new ArrayList<>();
         listOfServer.add(server1);
-        listOfServer.add(server2);
         return new OpenAPI()
                 .info(new Info()
                         .title("Films API")
